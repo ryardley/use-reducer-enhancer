@@ -2,13 +2,13 @@
 
 This package allows you to use standard Redux middleware with React Hooks' `useReducer` hook.
 
-You might want to consider this experimental but it has so far been tested with:
+## Works with Redux middleware
+
+So far this library been tested with:
 
 * [Thunk](examples/thunk)
 
-## Contibuting 
-
-PR's and issues most welcome! 
+...more to come
 
 ## Install
 
@@ -118,3 +118,7 @@ export default function Counter({ initState = { count: 0 } }) {
   );
 }
 ```
+
+## Contibuting 
+
+PR's and issues most welcome! 
