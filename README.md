@@ -2,9 +2,11 @@
 
 This package allows you to use standard Redux middleware with React Hooks' `useReducer` hook.
 
-This has so far been tested with:
+You might want to consider this experimental but it has so far been tested with:
 
 * [Thunk](examples/thunk)
+
+## Contibuting 
 
 PR's and issues most welcome! 
 
