@@ -44,6 +44,7 @@ export function applyMiddleware(...middlewares: Middleware[]): Enhancer {
 
     const useReducerFn: UseReducerFn<any> = (reducer, initialState, initFn) => {
       const [state, dispatch] = useReducerHook(reducer, initialState, initFn);
+
       if (!middlewares) {
         return [state, dispatch];
       }
