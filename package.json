@@ -29,6 +29,7 @@
   },
   "dependencies": {},
   "jest": {
-    "preset": "ts-jest"
+    "preset": "ts-jest",
+    "rootDir": "src"
   }
 }
