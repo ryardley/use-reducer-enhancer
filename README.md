@@ -11,9 +11,12 @@ This package appears to work for basic usecases in non performance critical sett
 So far this library has been found to work with:
 
 - [Thunk](examples/thunk)
-- _[Click here](https://github.com/ryardley/use-reducer-enhancer/pulls) to add your favourite middleware!_
 
 ...more to come
+
+_[Click here](https://github.com/ryardley/use-reducer-enhancer/pulls) to add your favourite middleware!_
+
+
 
 ## Install
 
