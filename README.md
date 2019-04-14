@@ -9,7 +9,7 @@ This package appears to work for basic usecases in non performance critical sett
 So far this library has been found to work with:
 
 * [Thunk](examples/thunk)
-* *Insert your favourite middleware here via [PR](https://github.com/ryardley/use-reducer-enhancer/pulls)*
+* *[Click here](https://github.com/ryardley/use-reducer-enhancer/pulls) to add your favourite middleware!*
 
 ...more to come
 
