@@ -26,10 +26,6 @@ or
 $ yarn add use-reducer-enhancer
 ```
 
-## Why did you build this?
-
-I needed a way to manage asynchronous code within state diaspatch logic and thought it made sense to wrap the existing middleware patterns we use in redux so they can be applied to useReducer.
-
 ## API
 
 The package provides a named export `applyMiddleware` that can create an enahancer that can be used to wrap `useReducer` with middleware.
@@ -122,6 +118,10 @@ export default function Counter({ initState = { count: 0 } }) {
   );
 }
 ```
+
+## Why did you build this?
+
+I needed a way to manage asynchronous code within state diaspatch logic and thought it made sense to wrap the existing middleware patterns we use in redux so they can be applied to useReducer.
 
 ## Contibuting 
 
