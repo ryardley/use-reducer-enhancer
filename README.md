@@ -1,4 +1,5 @@
- 
+[![Build Status](https://travis-ci.org/ryardley/use-reducer-enhancer.svg?branch=master)](https://travis-ci.org/ryardley/use-reducer-enhancer)
+
 # use-reducer-enhancer ✨
 
 This package allows you to use React Hooks' `useReducer` hook with standard Redux middleware.
@@ -9,8 +10,8 @@ This package appears to work for basic usecases in non performance critical sett
 
 So far this library has been found to work with:
 
-* [Thunk](examples/thunk)
-* *[Click here](https://github.com/ryardley/use-reducer-enhancer/pulls) to add your favourite middleware!*
+- [Thunk](examples/thunk)
+- _[Click here](https://github.com/ryardley/use-reducer-enhancer/pulls) to add your favourite middleware!_
 
 ...more to come
 
@@ -123,6 +124,6 @@ export default function Counter({ initState = { count: 0 } }) {
 
 I needed a way to manage asynchronous code within state diaspatch logic and thought it made sense to wrap the existing middleware patterns we use in redux so they can be applied to useReducer.
 
-## Contibuting 
+## Contibuting
 
-PR's and issues most welcome! 
+PR's and issues most welcome!
