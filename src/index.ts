@@ -10,17 +10,19 @@ type Store<T extends object = {}> = {
   dispatch: DispatchFn;
 };
 
-export type UseReducerFn<T extends object = {}> = (
-  reducer: ReducerFn,
-  initState?: T,
-  init?: () => T
-) => [any, DispatchFn];
+import { Reducer, ReducerState, ReducerAction, Dispatch } from "react";
+
+export type UseReducerFn<R extends Reducer<any, any>> = (
+  reducer: R,
+  initialState: ReducerState<R>,
+  initializer?: undefined
+) => [ReducerState<R>, Dispatch<ReducerAction<R>>];
 
 export type Middleware = (
   store: Store
 ) => (next: DispatchFn) => (action: Action) => any;
 
-export type Enhancer = (fn: UseReducerFn) => UseReducerFn;
+export type Enhancer = (fn: UseReducerFn<any>) => UseReducerFn<any>;
 
 function compose(...funcs: DispatchDecorator[]): DispatchDecorator {
   if (funcs.length === 0) {
@@ -40,7 +42,7 @@ export function applyMiddleware(...middlewares: Middleware[]): Enhancer {
       return useReducerHook;
     }
 
-    const useReducerFn: UseReducerFn = (reducer, initialState, initFn) => {
+    const useReducerFn: UseReducerFn<any> = (reducer, initialState, initFn) => {
       const [state, dispatch] = useReducerHook(reducer, initialState, initFn);
       if (!middlewares) {
         return [state, dispatch];
