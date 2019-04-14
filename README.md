@@ -1,8 +1,9 @@
-# use-reducer-enhancer
+ 
+# use-reducer-enhancer ✨
 
 This package allows you to use React Hooks' `useReducer` hook with standard Redux middleware.
 
-## Work with Redux middleware using React Hooks
+## Work with Redux middleware using React Hooks 🎣
 
 This package appears to work for basic usecases in non performance critical settings but I would consider it experimental for the time being.
 
