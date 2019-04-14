@@ -1,6 +1,6 @@
 # use-reducer-enhancer
 
-This package allows you to use standard Redux middleware with redux hooks' `useReducer` hook.
+This package allows you to use standard Redux middleware with React Hooks' `useReducer` hook.
 
 ## Install
 
