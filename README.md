@@ -4,9 +4,12 @@ This package allows you to use React Hooks' `useReducer` hook with standard Redu
 
 ## Works with Redux middleware
 
-So far this library been tested with:
+This package appears to work for basic usecases in non performance critical settings but I would consider it experimental for the time being.
+
+So far this library has been found to work with:
 
 * [Thunk](examples/thunk)
+* *Insert your favourite middleware here via [PR](https://github.com/ryardley/use-reducer-enhancer/pulls)*
 
 ...more to come
 
