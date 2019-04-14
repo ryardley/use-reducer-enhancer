@@ -2,8 +2,6 @@
 
 This package allows you to use standard Redux middleware with redux hooks' `useReducer` hook.
 
-_Currently this package is experimental and has not been tested extensively so use with caution._
-
 ## Install
 
 ```
